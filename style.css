@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap');
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+    color: #232121;
+}
+
+/* Header */
+
+.header {
+    padding-top: 30px;
+    background-color: #fff;
+    text-transform: uppercase; 
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 36px;
+    margin-top: -10px;
+} 
+
+/* Main */
+
+.main-page {
+    display: flex;
+}
+
+.main-title {
+    text-align: center;
+}
+
+h1 {
+    color: #080153;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin-top: 160px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.button {
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: block;
+    padding: 20px 30px;
+    margin-top: 50px;
+    color: #080153;
+    font-weight: 700;
+    width: 285px;
+    height: 69px;
+    border-radius: 54px;
+    background: linear-gradient(192deg, #C2C1E9 8.62%, rgba(172, 171, 191, 0.00) 139.68%);
+}
+
+.button:hover {
+    background-color: #C0DBFA;
+}
+
+.button:active {
+    background-color: #8FC1FC;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.nav li {
+    transition: color 0.2s;
+    margin-right: 20px;
+}
+
+.nav li:hover {
+    color: #1E3FEA;
+}
+
+.gl{
+    color: #1E3FEA;
+}
+.nav li:active {
+    color: #14278A;
+}
+
+.image-textile {
+    position: absolute;
+    left: 0;
+    bottom: 140px;
+    top: 88px;
+    z-index: -1;
+} 
+
+.ecllipse1 {
+    position: absolute;
+    left: 0;
+    bottom: 140px; 
+    z-index: -5;
+}
+
+.ecllipse2 {
+    position: absolute;
+    bottom: 0;
+    left: 540px;
+    right: 240px;
+    z-index: -5;
+}
+
+.ecllipse3 {
+    position: absolute;
+    right: 0;
+    bottom: 266px;
+    z-index: -5;
+}
+
+.social {
+    position: absolute;
+    max-width: 40px;
+    right: 60px;
+    bottom: 200px;
+}
+
+.burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+.burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #080153;
+    right: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.header.open .burger-btn span {
+    background-color: #080153;
+}
+
+/* Fopm page */
+
+.form-page {
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+}
+
+form {
+    padding: 80px 220px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type=text], input[type=tel] {
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    margin: 15px 0;
+    background-color: #F2F8FE;
+    border: 1px solid #080153;
+    border-radius: 8px;
+}
+
+.form-page h2 {
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+
+
+/* Media*/
+
+@media (max-width: 1174px) {
+    .burger-btn {
+        display: block;
+        z-index: 5;
+    }
+
+    .nav {
+        position: absolute;
+        left: -250px;
+        top: 0;
+        width: 250px;
+        background-color: #F2F8FE;
+        padding: 70px 20px 20px 20px;
+        transition: transform .5s;
+        z-index: 2;
+    }
+
+    .nav ul {
+        display: block;
+    }
+
+    .nav a {
+        display: block;
+        color: #232121;
+        padding: 10px 0;
+
+    }
+
+    .header.open .nav {
+        transform: translateX(100%);
+    }
+
+    h1 {
+        margin-top: 180px;
+    }
+
+    .social {
+        display: flex;
+        position: absolute;
+        top: 100px;
+        left: 5px;
+        max-width: 80px;
+        
+    }
+
+    h2 {
+        font-weight: 400;
+    }
+
+    .ecllipse3 {
+        display: none;
+    }
+
+    .ecllipse2 {
+        display: none;
+    }
+
+    .gl{
+        color: #1E3FEA!important;
+    }
+
+    .form {
+        padding: 80px 60px;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+

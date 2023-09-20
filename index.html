@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantera</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header burger-menu-header">
+        <div class="container flex-box">
+            <button class="burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="logo">
+                <a href="#!">Pantera</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="gl"><a class="gl" href="">Главная</a></li>
+                    <li><a href="#!">Фото</a></li>
+                    <li><a href="#!">Видео</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                    <li><a href="tel:+380965643278">+38 096 5643278</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    <main class="main">
+        <section class="main-page">
+            <div class="container">
+                <div class="main-title">
+                    <h1>Гимнастика</h1>
+                    <h2>для души и тела</h2>
+                    <a href="#form" class="button">Оставить заявку</a>
+                </div>
+                <div>
+                    <img class="image-textile" src="img/textile.png" alt="">
+                    <img class="ecllipse1" src="img/Ellipse 1.svg" alt="">
+                    <img class="ecllipse2" src="img/Ellipse 2.svg" alt="">
+                    <img class="ecllipse3" src="img/Ellipse 3.svg" alt="">
+                </div>
+                <div class="social">
+                    <a href=""><img src="img/telegram.png" alt=""></a>
+                    <a href=""><img src="img/youtube.png" alt=""></a>
+                    <a href=""><img src="img/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="form-page">
+            <div class="container">
+                <form class="form" action="" method="post" netlify>
+                    <h2 id="form">Форма</h2>
+                    <div class="form-field">
+                        <label for="name">Имя:</label>
+                            <input id="name" type="text"  name="name" placeholder="Ваше имя" maxlength="60" required>
+                    </div>
+                    <div class="form-field"> 
+                        <label for="tel">Номер телефона:</label>
+                            <input id="tel" type="tel" name="tel"  placeholder="Ваш номер телефона" maxlength="60" required>   
+                    </div>
+                    <button class="button">Отправить</button>
+                </form>
+            </div>
+        </section>      
+    </main>
+    <footer class="footer">
+        <div class="container"> 
+        </div>
+    </footer>
+	<script defer src="script.js"></script>
+</body>
+</html>
